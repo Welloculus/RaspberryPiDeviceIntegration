@@ -20,7 +20,7 @@ sudo modprobe w1-therm
 
 
 // sensor starts reading data
-`ds18b20.sensors(function(err, ids) {
+ds18b20.sensors(function(err, ids) {
 
     if (err) {
       return console.log('Can not get sensor IDs', err);
@@ -43,7 +43,7 @@ sudo modprobe w1-therm
 
 // You also directly read data using temperatureSync method
 console.log('Current temperature: ' + ds18b20.temperatureSync('28-051691b6b4ff', {parser: 'hex'}));
-`
+
 
 
 
