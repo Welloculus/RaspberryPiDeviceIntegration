@@ -18,11 +18,11 @@ sudo modprobe w1-therm
 Step3: We need to create simple js file to read temperature with these code.
 
 // temperature sensor module 
-var ds18b20 = require('ds18b20');
+`var ds18b20 = require('ds18b20');`
 
 
 // sensor starts reading data
-ds18b20.sensors(function(err, ids) {
+`ds18b20.sensors(function(err, ids) {
 
     if (err) {
       return console.log('Can not get sensor IDs', err);
@@ -45,7 +45,7 @@ ds18b20.sensors(function(err, ids) {
 
 // You also directly read data using temperatureSync method
 console.log('Current temperature: ' + ds18b20.temperatureSync('28-051691b6b4ff', {parser: 'hex'}));
-
+`
 
 
 
