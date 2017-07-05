@@ -2,20 +2,18 @@
 
 Temperature device send the output to raspberryPi device and after that we process data through IOT gateway. 
 
-## How to read temperature 
-
-Step1: connect temperature device with raspberryPi Device.
+## Step1: connect temperature device with raspberryPi Device.
 https://cdn-learn.adafruit.com/downloads/pdf/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing.pdf
 follow above links to install temperature sensor with rpi device.
 
 
-Step2: After that we need to install these modules on raspberryPi Device 
+## Step2: install these modules on raspberryPi Device 
 
 sudo modprobe wire
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
 
-Step3: We need to create simple js file to read temperature with these code.
+## Step3: create simple js file to read temperature with the help of nodeJs.
 
 // temperature sensor module 
 `var ds18b20 = require('ds18b20');`
