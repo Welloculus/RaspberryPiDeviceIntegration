@@ -44,6 +44,7 @@ ds18b20.sensors(function(err, ids) {
 // You also directly read data using temperatureSync method
 console.log('Current temperature: ' + ds18b20.temperatureSync('28-051691b6b4ff', {parser: 'hex'}));
 
-
+## Step4: Run this command to execute file 
+node temperature.js
 
 
