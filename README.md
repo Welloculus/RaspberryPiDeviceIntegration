@@ -15,6 +15,7 @@ sudo modprobe w1-therm
 
 ## Step3: create simple js file to read temperature with the help of nodeJs.
 
+```
 // temperature sensor module 
 `var ds18b20 = require('ds18b20');`
 
@@ -43,8 +44,9 @@ ds18b20.sensors(function(err, ids) {
 
 // You also directly read data using temperatureSync method
 console.log('Current temperature: ' + ds18b20.temperatureSync('28-051691b6b4ff', {parser: 'hex'}));
-
+```
 ## Step4: Run this command to execute file 
+Step3 Code has been implemented in temperature.js file. After setup you can directly run this file using below command on raspberryPi terminal.
 node temperature.js
 
 
