@@ -10,8 +10,11 @@ follow above links to install temperature sensor with rpi device.
 ## Step2: install these modules on raspberryPi Device 
 
 sudo modprobe wire
+
 sudo modprobe w1-gpio
+
 sudo modprobe w1-therm
+
 
 ## Step3: create simple js file to read temperature with the help of nodeJs.
 
